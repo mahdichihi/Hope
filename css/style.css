@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #2db2ea;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.back_ground {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  background: url("../images/htopbanner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.access_form {
+  background: white;
+  padding: 1.3em;
+}
+
+.logo_div {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 1.3em;
+}
+
+.logo {
+  width: 6.5em;
+}
+
+h4 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0 0 0.4em;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7em;
+  margin: 0;
+}
+h3 span {
+  color: var(--primary-color);
+}
+
+p {
+  text-align: center;
+  color: #747474;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+  font-weight: 400;
+  padding: 0.5em 0;
+}
+
+.login_form {
+  max-width: 20em;
+  margin: auto;
+}
+
+.email_field,
+.password_field {
+  position: relative;
+  padding-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+input {
+  width: 100%;
+  margin: 0;
+  padding: 0.8em 1em;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  transition: border 350ms ease-in-out;
+  border-radius: 0.6em;
+  font-size: 1em;
+}
+input:focus {
+  border: 1px solid var(--primary-color);
+}
+
+label {
+  color: var(--primary-color);
+  background: white;
+  position: absolute;
+  top: -2px;
+  left: 11px;
+  padding: 0 0.4em;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.forgot_password {
+  margin: 1em 0;
+  text-align: right;
+}
+.forgot_password a {
+  color: #303030;
+  transition: color 350ms ease-in-out;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.forgot_password a:hover {
+  color: var(--primary-color);
+}
+
+.login {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.login_button {
+  width: 100%;
+  padding: 0.85em;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background: var(--primary-color);
+  transition: background-color 350ms ease-in-out;
+  border: none;
+  border-radius: 0.4em;
+}
+.login_button:hover {
+  background: #1f80a9;
+}
+
+.login_text {
+  color: #303030;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: left;
+}
+
+.register_now {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.register_button {
+  width: 100%;
+  padding: 0.8em;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--primary-color);
+  background: white;
+  transition: background-color 350ms ease-in-out;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.4em;
+}
+.register_button:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.app_version {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  color: #747474;
+}
+
+@media only screen and (min-width: 480px) {
+  .logo_div {
+    padding: 1em 0 2.3em;
+  }
+  .logo {
+    width: 8.5em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .access_form {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.8901960784);
+  }
+  .back_ground {
+    display: block;
+  }
+  .bkgr_image {
+    width: 100%;
+    height: auto;
+  }
+  label {
+    top: -9px;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    background: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    height: auto;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .access_form {
+    background: rgba(255, 255, 255, 0.8901960784);
+    border-radius: 2em;
+    width: 61%;
+    margin: 1em 0;
+  }
+  .hero {
+    padding: 0px 1em 1.3em;
+    line-height: 2.5em;
+  }
+  .hero p {
+    padding: 4.5em 1em 0;
+  }
+  .login_form {
+    padding: 0px 2.5em 1.3em;
+    width: -webkit-fill-available;
+  }
+}/*# sourceMappingURL=style.css.map */
