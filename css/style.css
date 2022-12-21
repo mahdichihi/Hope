@@ -3,25 +3,40 @@
   --primary-color: #2db2ea;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
 }
 
-.back_ground {
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.home_wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.background_image {
   display: none;
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: -1;
   background: url("../images/htopbanner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(5px);
+}
+.background_image .background_color {
+  background-color: rgba(45, 178, 234, 0.84);
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .container {
+  position: absolute;
   width: 100%;
   height: 100%;
 }
@@ -29,6 +44,7 @@ body {
 .access_form {
   background: white;
   padding: 1.3em;
+  overflow: auto;
 }
 
 .logo_div {
@@ -43,7 +59,6 @@ body {
 
 h4 {
   text-align: center;
-  font-family: "Poppins", sans-serif;
   margin: 0 0 0.4em;
   font-size: 1em;
   font-weight: 400;
@@ -52,7 +67,6 @@ h4 {
 
 h3 {
   text-align: center;
-  font-family: "Poppins", sans-serif;
   font-size: 1.7em;
   margin: 0;
 }
@@ -63,7 +77,6 @@ h3 span {
 p {
   text-align: center;
   color: #747474;
-  font-family: "Poppins", sans-serif;
   margin: 0;
   margin-bottom: 1em;
   font-size: 0.9em;
@@ -104,7 +117,6 @@ label {
   top: -2px;
   left: 11px;
   padding: 0 0.4em;
-  font-family: "Poppins", sans-serif;
   cursor: pointer;
   font-size: 0.9em;
 }
@@ -116,7 +128,6 @@ label {
 .forgot_password a {
   color: #303030;
   transition: color 350ms ease-in-out;
-  font-family: "Poppins", sans-serif;
   font-size: 0.8em;
   font-weight: bold;
 }
@@ -147,7 +158,6 @@ label {
 
 .login_text {
   color: #303030;
-  font-family: "Poppins", sans-serif;
   font-size: 0.8em;
   font-weight: bold;
   text-align: left;
@@ -176,7 +186,6 @@ label {
 }
 
 .app_version {
-  font-family: "Poppins", sans-serif;
   font-size: 0.7em;
   letter-spacing: 1px;
   color: #747474;
@@ -194,49 +203,39 @@ label {
   .container {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
   .access_form {
     width: 50%;
-    background: rgba(255, 255, 255, 0.8901960784);
   }
-  .back_ground {
+  .background_image {
     display: block;
   }
-  .bkgr_image {
-    width: 100%;
-    height: auto;
-  }
-  label {
-    top: -9px;
-    font-size: 0.7em;
-    letter-spacing: 2px;
-    background: none;
-  }
 }
-@media only screen and (min-width: 1200px) {
-  .container {
-    height: auto;
-  }
+@media only screen and (min-width: 1080px) {
   .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
   }
   .access_form {
-    background: rgba(255, 255, 255, 0.8901960784);
     border-radius: 2em;
-    width: 61%;
-    margin: 1em 0;
+    margin: auto 0;
   }
   .hero {
-    padding: 0px 1em 1.3em;
+    width: 50%;
+    padding: 0 1.2em 1.3em;
     line-height: 2.5em;
   }
+  .hero h3 {
+    font-size: 1.6em;
+    margin: revert;
+  }
   .hero p {
-    padding: 4.5em 1em 0;
+    margin: 0;
+    line-height: 2.7em;
   }
   .login_form {
-    padding: 0px 2.5em 1.3em;
-    width: -webkit-fill-available;
+    max-width: none;
+    width: 50%;
+    margin: 0;
+    padding: 0 1.2em 1.3em;
   }
 }/*# sourceMappingURL=style.css.map */
