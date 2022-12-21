@@ -11,6 +11,17 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(157, 157, 157, 0.0784313725);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(131, 131, 131, 0.4784313725);
+  border-radius: 15px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(131, 131, 131, 0.7333333333);
+}
 
 .home_wrapper {
   width: 100%;
@@ -45,6 +56,17 @@ body {
   background: white;
   padding: 1.3em;
   overflow: auto;
+}
+.access_form::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(157, 157, 157, 0.0784313725);
+}
+.access_form::-webkit-scrollbar-thumb {
+  background-color: rgba(131, 131, 131, 0.4784313725);
+  border-radius: 15px;
+}
+.access_form::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(131, 131, 131, 0.7333333333);
 }
 
 .logo_div {
