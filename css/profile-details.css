@@ -1,1 +1,326 @@
-/*# sourceMappingURL=profile-details.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+:root {
+  --primary-color: #2db2ea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+*:hover {
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+*:not(:hover) {
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+*:hover::before {
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+*:not(:hover)::before {
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f1faff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: var(--primary-color);
+}
+
+.header_strip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: white;
+  width: 100%;
+  box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.15);
+  padding: 0.8em 0;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
+.identity .logo img {
+  width: 68%;
+  height: auto;
+}
+
+.main_container {
+  margin: 8em auto 2.5em;
+  padding: 0 1em;
+}
+
+.title {
+  padding: 0.6em 0;
+}
+.title h3 {
+  font-size: 1em;
+}
+
+.profile_details {
+  background: white;
+  padding: 1.2em;
+  border-radius: 0.5em;
+}
+
+.profile_image {
+  text-align: center;
+}
+.profile_image img {
+  border: 2px solid #ebebeb;
+  width: 28%;
+  border-radius: 50%;
+}
+
+.profile_name {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.profile_toggle {
+  text-align: center;
+  margin: 2em 0;
+  z-index: 1;
+  position: relative;
+}
+
+#toggle_button {
+  position: relative;
+  color: var(--primary-color);
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  border-radius: 2em;
+  padding: 0.9em 1.7em;
+  font-size: 0.8em;
+  z-index: 1;
+  cursor: pointer;
+}
+#toggle_button:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.profile_toggle::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  border-top: 1px solid #39b3e6;
+  clear: both;
+  display: block;
+  position: absolute;
+  top: 12px;
+}
+
+.profile_data_list {
+  display: none;
+}
+.profile_data_list li {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-columns: repeat(auto-fit, minmax(8.5em, 1fr));
+  font-size: 0.8em;
+  padding: 0.6em 0;
+}
+.profile_data_list li .profile_data_left {
+  font-weight: bold;
+}
+
+.edit_details {
+  background: white;
+  padding: 2.4em 1.8em;
+  border-radius: 0.5em;
+  margin: 1.2em 0 0;
+}
+
+.profile_actions {
+  text-align: center;
+  display: block;
+}
+.profile_actions .profile_actions_left {
+  display: flex;
+  flex-direction: column;
+}
+.profile_actions button {
+  text-align: center;
+  display: block;
+  background: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin: 0 0 0.8em;
+  color: white;
+  padding: 0.8em 2em;
+  border-radius: 0.3em;
+  line-height: 1.6em;
+}
+
+.profile_actions_right a {
+  background: black;
+  color: white;
+  font-size: 0.9em;
+  padding: 0.7em 2em;
+  display: block;
+  border-radius: 0.3em;
+  text-transform: uppercase;
+  position: relative;
+}
+.profile_actions_right a::before {
+  content: "+";
+  font-size: 16px;
+  color: #000;
+  background: #fff;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 0.6em;
+  top: 0.6em;
+  text-align: center;
+  line-height: 21px;
+  font-weight: bold;
+}
+.profile_actions_right a:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+.profile_actions_right a:hover::before {
+  color: var(--primary-color);
+}
+
+.current_site {
+  margin: 2.6em 0 0 0;
+  border-top: 3px solid var(--primary-color);
+  padding: 0.8em 0 0 0;
+}
+
+.content_flag {
+  padding: 0.5em 0 0 0;
+  margin: 0 0 1.2em 0;
+}
+.content_flag span {
+  font-size: 0.7em;
+  letter-spacing: 0.3em;
+  padding: 0.4em 1.2em;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 0.3em;
+}
+
+.content_left h3 {
+  font-size: 1.3em;
+}
+.content_left h3 span {
+  font-size: 0.8em;
+  color: #979797;
+}
+.content_left h5 {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+.content_left .due_amount {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  color: #979797;
+}
+
+.content_right h6 {
+  font-weight: normal;
+  font-size: 0.9em;
+  margin: 0.6em 0 0.3em 0;
+}
+
+.content_progress {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
+  position: relative;
+  justify-items: center;
+  margin: 3.5em 0;
+}
+.content_progress::before {
+  content: "";
+  background: var(--primary-color);
+  width: 100%;
+  height: 0.2em;
+  position: absolute;
+  top: 2.87em;
+  left: 0.1em;
+}
+@media only screen and (min-width: 395px) {
+  .content_progress::before {
+    top: 1.4em;
+  }
+}
+.content_progress .complete {
+  background: var(--primary-color);
+  border: 1px solid white;
+  height: 3.5em;
+  width: 3.5em;
+  font-size: 0.8em;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 23px;
+  position: relative;
+}
+.content_progress .complete span {
+  display: none;
+  border: 1px solid var(--primary-color);
+  padding: 0.1em 0.3em;
+  position: absolute;
+  top: 4em;
+  left: -1.3em;
+  border-radius: 0.3em;
+  text-align: center;
+  clear: both;
+  z-index: 1;
+  background: white;
+}
+.content_progress .complete:hover span {
+  display: inline; /* make the span appear */
+}
+.content_progress .incomplete {
+  background: white;
+  border: 2px solid var(--primary-color);
+  box-sizing: border-box;
+  height: 3.5em;
+  width: 3.5em;
+  font-size: 0.8em;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 23px;
+  position: relative;
+}
+.content_progress .incomplete span {
+  display: none;
+  border: 1px solid var(--primary-color);
+  padding: 0.1em 0.3em;
+  position: absolute;
+  top: 4em;
+  left: -1.3em;
+  border-radius: 0.3em;
+  text-align: center;
+  clear: both;
+  z-index: 1;
+  background: white;
+}
+.content_progress .incomplete:hover span {
+  display: inline; /* make the span appear */
+}/*# sourceMappingURL=profile-details.css.map */
