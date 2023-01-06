@@ -12,7 +12,6 @@
         transition-duration: 0.1s;
         transition-timing-function: linear;
     }
-
     &:not(:hover) {
         transition-duration: 0.1s;
         transition-timing-function: linear;
@@ -399,11 +398,20 @@ a {
 .content_actions {
     position: relative;
     top: -2.5em;
+    // height: 1.5em;
+
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 
     a .ri-pencil-fill {
         float: right;
         font-size: 1.4em;
         color: var(--primary-color);
+        position: relative;
+        right: 2em;
     }
 
     a .ri-delete-bin-5-fill {
@@ -411,7 +419,7 @@ a {
         font-size: 1.4em;
         color: var(--primary-color);
         position: relative;
-        right: 1em;
+        left: 1em;
     }
 }
 
@@ -486,6 +494,8 @@ a {
     letter-spacing: 0.1em;
     font-size: 0.9em;
     word-spacing: 0.3em;
+    max-width: 32em;
+    margin: auto;
 }
 
 @media only screen and (min-width: 480px) {
@@ -547,9 +557,9 @@ a {
         max-width: 24em;
     }
 
-    .content_actions {
-        height: 1.5em;
-    }
+    // .content_actions {
+    //     height: 1.5em;
+    // }
 
     .content_flex {
         display: flex;
@@ -573,6 +583,10 @@ a {
     .previous_applications_list {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .copyright_text {
+        max-width: 44em;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -587,15 +601,21 @@ a {
         max-width: 58em;
         padding: 1.5em 1em;
     }
+
+    .content {
+        max-width: 60em;
+        margin: auto;
+    }
+
     .profile_details {
         margin: 0 1em;
-        flex-basis: 25%;
-        max-width: 13em;
+        flex-basis: 34%;
+        max-width: 16em;
     }
 
     .edit_details {
         margin: 0 1em;
-        flex-basis: 75%;
+        flex-basis: 73%;
         max-width: 37em;
     }
 
@@ -628,22 +648,32 @@ a {
         top: 1.4em;
         left: 0;
     }
+
+    .copyright_text {
+        max-width: 58em;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     .header_container {
-        max-width: 93%;
+        max-width: 69em;
     }
 
     .title {
-        max-width: 95%;
+        max-width: 69em;
     }
+
+    .content {
+        max-width: 71em;
+        // margin: auto;
+    }
+
     .profile_details {
-        max-width: 25%;
+        max-width: 20em;
     }
 
     .edit_details {
-        max-width: 61%;
+        max-width: 48em;
     }
 
     .profile_actions {
@@ -674,5 +704,9 @@ a {
     .content_progress::before {
         top: 1.4em;
         left: 0;
+    }
+
+    .copyright_text {
+        max-width: 69em;
     }
 }

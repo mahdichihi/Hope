@@ -376,17 +376,24 @@ a:hover {
   position: relative;
   top: -2.5em;
 }
+.content_actions::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .content_actions a .ri-pencil-fill {
   float: right;
   font-size: 1.4em;
   color: var(--primary-color);
+  position: relative;
+  right: 2em;
 }
 .content_actions a .ri-delete-bin-5-fill {
   float: right;
   font-size: 1.4em;
   color: var(--primary-color);
   position: relative;
-  right: 1em;
+  left: 1em;
 }
 
 .previous_applications {
@@ -455,6 +462,8 @@ a:hover {
   letter-spacing: 0.1em;
   font-size: 0.9em;
   word-spacing: 0.3em;
+  max-width: 32em;
+  margin: auto;
 }
 
 @media only screen and (min-width: 480px) {
@@ -505,9 +514,6 @@ a:hover {
     flex-basis: 65%;
     max-width: 24em;
   }
-  .content_actions {
-    height: 1.5em;
-  }
   .content_flex {
     display: flex;
     align-items: baseline;
@@ -527,6 +533,9 @@ a:hover {
   .previous_applications_list {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .copyright_text {
+    max-width: 44em;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .header_container {
@@ -539,14 +548,18 @@ a:hover {
     max-width: 58em;
     padding: 1.5em 1em;
   }
+  .content {
+    max-width: 60em;
+    margin: auto;
+  }
   .profile_details {
     margin: 0 1em;
-    flex-basis: 25%;
-    max-width: 13em;
+    flex-basis: 34%;
+    max-width: 16em;
   }
   .edit_details {
     margin: 0 1em;
-    flex-basis: 75%;
+    flex-basis: 73%;
     max-width: 37em;
   }
   .profile_actions {
@@ -573,19 +586,25 @@ a:hover {
     top: 1.4em;
     left: 0;
   }
+  .copyright_text {
+    max-width: 58em;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .header_container {
-    max-width: 93%;
+    max-width: 69em;
   }
   .title {
-    max-width: 95%;
+    max-width: 69em;
+  }
+  .content {
+    max-width: 71em;
   }
   .profile_details {
-    max-width: 25%;
+    max-width: 20em;
   }
   .edit_details {
-    max-width: 61%;
+    max-width: 48em;
   }
   .profile_actions {
     display: flex;
@@ -610,5 +629,8 @@ a:hover {
   .content_progress::before {
     top: 1.4em;
     left: 0;
+  }
+  .copyright_text {
+    max-width: 69em;
   }
 }/*# sourceMappingURL=profile-details.css.map */
