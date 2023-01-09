@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+:root {
+  --primary-color: #2db2ea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f1faff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: var(--primary-color);
+  fill: var(--primary-color);
+}
+
+.header_strip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: white;
+  width: 100%;
+  box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.15);
+  padding: 0.7em 0;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+  margin: auto;
+}
+
+.identity .logo {
+  width: 5.9em;
+  height: 5.9em;
+  display: block;
+}
+.identity .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.links_list {
+  line-height: 2.5em;
+  text-align: right;
+}
+.links_list a {
+  font-size: 0.9em;
+}
+
+.ri-account-circle-fill {
+  position: relative;
+  top: 5px;
+  right: 10px;
+  font-size: 1.4em;
+}
+
+.ri-logout-circle-r-fill {
+  position: relative;
+  top: 5px;
+  right: 5px;
+  font-size: 1.4em;
+}
+
+.steps_list ul {
+  display: flex;
+}
+
+.footer_wrap {
+  background: #c7eeff;
+}
+
+.footer_inner {
+  background: #c7eeff;
+  padding: 1.8em 0.9em 1.2em;
+  text-align: center;
+}
+
+.footer_logo {
+  width: 8em;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.footer_social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_social a {
+  margin-inline: 0.8em;
+}
+.footer_social svg {
+  width: 1.7em;
+  height: auto;
+}
+.footer_social svg:hover {
+  box-shadow: 0px 0px 5px 2px #6b6b6b;
+  border-radius: 50%;
+}
+
+.copyright_text {
+  border-top: solid 1px #000;
+  padding-top: 1.5em;
+  letter-spacing: 0.15em;
+  font-size: 0.85em;
+  word-spacing: 0.2em;
+  margin-top: 1.2em;
+}
+
+@media only screen and (min-width: 450px) {
+  .links_list {
+    display: grid;
+    grid-template-columns: repeat(2, 7em);
+  }
+  .ri-account-circle-fill {
+    right: 5px;
+  }
+  .footer_inner {
+    padding: 1.8em 0.9em 2.2em;
+  }
+  .footer_logo {
+    width: 10.3em;
+  }
+  .copyright_text {
+    font-size: 0.95em;
+    margin-top: 1.4em;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .header_container {
+    max-width: 32em;
+  }
+  .footer_inner {
+    max-width: 32em;
+    margin: auto;
+  }
+  .footer_logo {
+    width: 10em;
+  }
+  .copyright_text {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header_container {
+    max-width: 43em;
+    padding: 0;
+  }
+  .footer_inner {
+    max-width: 43em;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 992px) {
+  .header_container {
+    max-width: 58em;
+  }
+  .footer_inner {
+    max-width: 58em;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1200px) {
+  .header_container {
+    max-width: 69.5em;
+  }
+  .footer_inner {
+    max-width: 69.5em;
+  }
+}/*# sourceMappingURL=step1.css.map */
